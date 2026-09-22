@@ -25,7 +25,7 @@ jobs:
 
     - name: Build, Tag, and Push Image to ECR
       env:
-        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REGISTRY: ${{ mongodb+srv://Newman:<Histo98>@cluster0.0kuhpge.mongodb.net/?appName=Cluster0 }}
         ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
         IMAGE_TAG: latest
       run: |
